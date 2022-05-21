@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulários</title>
+</head>
+<body>
+  <h1>Formulário de cadastro</h1>
+  <p>Aqui senhor fulano voce vai forncer seu dados para cadastrar no sistema:</p>
+  <form action="contato.html" method="get">
+    <p>Usuário: <input required type="text" id="nome" name="nome" size="15" maxlength="11" /> </p>
+    <p>Senha: <input required type="password" id="senha" name="senha" size="15" maxlength="11"> </p>
+    <p>Descreva sua informacoes:</p>
+    <textarea name="informacoes" id="informacoes" cols="30" rows="5"></textarea>
+    <p>Escolha o seu regime de trabalho:
+      <br />
+      <input type="radio" name="regime" value="CLT" checked="checked" /> CLT
+      <input type="radio" name="regime" value="PJ"> PJ
+      <input type="radio" name="regime" value="CLT_FLEX"> CLT_FLEX
+    </p>
+    <p>Escolha o horário de trabalho:
+      <br />
+      <input type="checkbox" name="horario" value="manha" checked="checked" /> Horario da manha
+      <input type="checkbox" name="horario" value="tarde" /> Horario da tarde
+      <input type="checkbox" name="horario" value="noite" checked="checked" /> Horario da noite
+    </p>
+    <p>
+      Escolha a cidade que deseja trabalhar:
+    </p>
+    <select name="cidade" id="cidade">
+      <option value="Sao Paulo">Sao Paulo</option>
+      <option value="Rio de janeiro">Rio de janeiro</option>
+      <option value="Mina Gerais" selected="selected">Mina Gerais</option>
+    </select>
+    <p>
+      Escolha a cidade que deseja viajar:
+    </p>
+    <select name="cidade" id="cidade" size="3" multiple="multiple">
+      <option value="Sao Paulo">Sao Paulo</option>
+      <option value="Rio de janeiro" selected="selected">Rio de janeiro</option>
+      <option value="Mina Gerais" selected="selected">Mina Gerais</option>
+    </select>
+
+    <p>Escolha a foto do seu cadastro: 
+      <input type="file" name="foto" id="foto">
+    </p>
+
+    <br />
+    <br />
+    <input type="image" src="images/cadastro.jpeg" name="foto" id="foto" width="100" />
+    
+  </form>
+</body>
+</html>
