@@ -1,0 +1,22 @@
+html {
+  background: blue;
+  color: #fff;
+  font-size: 36px;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Helvetica Neue";
+  
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.tamanho-da-linha {
+  line-height: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  word-spacing: 1em;
+  text-align: justify;
+}

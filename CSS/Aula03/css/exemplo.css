@@ -1,0 +1,59 @@
+html > body {
+  margin: 0;
+}
+
+html > body > div.caixa {
+  background: blue;
+  max-width: 800px;
+  height: 100%;
+  color: #fff;
+  font-size: 24px;
+  padding:1rem;
+  text-align: justify;
+}
+
+html > body > div.caixa > p {
+  margin: 0;
+  padding: 0;
+}
+
+html > body div.lista > ul > li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+html>body div.lista>ul>li>a {
+  color: #fff;
+}
+body>div>div.lista>ul>li:nth-child(2)>a {
+  color: bisque;
+}
+body>div>div.lista>ul>li:nth-child(3)>a {
+  color: sienna;
+}
+body>div>div.lista>ul>li:nth-child(3)>a:hover {
+  color: black;
+}
+
+html > body > div.caixa > div.caixa2 {
+  background: black;
+  padding: 2rem;
+  margin: 2rem;
+  text-align: center;
+  width: 300px;
+  height: 200px;
+  overflow-y: scroll;
+  border-right: dotted 10px #fff;
+  border-left: groove 10px darkgoldenrod;
+  border-top: groove 10px darkgoldenrod;
+  border-bottom: dotted 10px #fff;
+}
+
+html>body>div.caixa>div.caixa3 {
+  background: sandybrown;
+  padding: 2rem;
+  margin: 2rem;
+  text-align: center;
+  width: 300px;
+  height: 200px;
+}
