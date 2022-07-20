@@ -1,7 +1,10 @@
 html, body {
     margin-top: 15px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: #000;
+    background-image: url(../CSS/IMAGENS/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     color: rgb(245, 248, 250);
 
 }
@@ -15,10 +18,14 @@ h1 {
     text-align: center;
     margin-top: 0;
     border-radius: 10px; 
-    box-shadow: 0 0 1em rgb(247, 246, 244);
+    box-shadow: 0 0 1em rgb(245, 246, 247);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    background-color: rgba(110, 163, 157, 0.2);
-    color: #fffff;
+    background-color: rgba(46, 182, 187, 0.5);
+    color: rgb(244, 248, 248);
 }
 
+p { border-radius: 10px; 
+    box-shadow: 0 0 1em rgb(245, 246, 247);
+    font-size: 12px;
+}
