@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ex: Aula 04</title>
 </head>
-<body>
+<form>
     <table border="1" cellspacing="1" cellpadding="15">
        <tr>
            <th width="1340" scope="col">CADASTRO</th>
@@ -23,15 +23,12 @@
            <td>
              <label>GÊNERO:</label>
            </td>
-           <td>
-             <div>
-                <label for="generoMasculino">MASCULINO</label>
-                <input name="GENERO_MASCULINO" id="opcoes" class="btn btn-primary" type="radio" value="1">
-                <label for="generoFeminino">FEMININO</label>
-                <input name="GENERO_FEMININO" id="opcoes" class="btn btn-primary" type="radio" value="2">
-                <label for="OUTRO.TIPO">OUTROS</label>
-                <input name="OUTRO.TIPO" id="opcoes" class="btn btn-primary" type="radio" value="3">
-             </div>
+           <td width="130">
+            <select name="genero" id="genero">
+                <option value="MASCULINO">MASCULINO</option>
+                <option value="FEMININO">FEMININO</option>
+                <option value="OUTROS" selected="selected">OUTROS</option>
+              </select>
            </td>
        </tr>
        <tr>
@@ -72,7 +69,39 @@
             <td>
                 <label>E-MAIL<input type="mailto" size="45" maxlength="45" placeholder="seu@e-mail.com.br"></label>
             </td>
+            <td>
+                <label>FOTO PARA CADASTRO<input type="file" name="foto" id="foto"></label>
+            </td>
+        </tr>
+        <tr>
+            <center>    
+            <td>
+                <label>PREFERÊNCIA DE HORÁRIO:<input type="checkbox" name="horario" value="manha" checked="checked" /> MANHÃ
+                    <input type="checkbox" name="horario" value="tarde" /> TARDE
+                    <input type="checkbox" name="horario" value="noite" /> NOITE
+                </label>     
+            </td>
+            </center>
+        </tr> 
+        <tr>
+            <td>
+                <label>USUÁRIO:<input required type="text" id="nome" name="usuário" size="45" maxlength="45" placeholder="Digite seu usuário..." /></label>
+                <label>SENHA:<input required type="password" id="senha" name="senha" size="15" maxlength="8" placeholder="Senha..."></label>
+            </td>
+        </tr>   
+        <tr>
+            <td>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <input type="image" src="..//Projeto/IMAGENS/cadastro.jpeg" name="foto" id="foto" width="100" />
+            </td>
         </tr>
     </table>
+</form>
 </body>
 </html>
