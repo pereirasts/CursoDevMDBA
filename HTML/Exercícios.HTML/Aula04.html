@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex: Aula 04</title>
+</head>
+<body>
+    <table border="1" cellspacing="1" cellpadding="15">
+       <tr>
+           <th width="1340" scope="col">CADASTRO</th>
+       </tr>
+    </table>
+    <table>
+       <tr>
+           <td>
+              <label> NOME: <input type="text" size="70" maxlength="50" placeholder="Digite seu nome aqui..."></label>
+           </td>
+           <td>
+            <label> DATA DE NASCIMENTO: <input type="date" size="30" maxlength="8"></label>
+           </td>
+           <td>
+             <label>GÊNERO:</label>
+           </td>
+           <td>
+             <div>
+                <label for="generoMasculino">MASCULINO</label>
+                <input name="GENERO_MASCULINO" id="opcoes" class="btn btn-primary" type="radio" value="1">
+                <label for="generoFeminino">FEMININO</label>
+                <input name="GENERO_FEMININO" id="opcoes" class="btn btn-primary" type="radio" value="2">
+                <label for="OUTRO.TIPO">OUTROS</label>
+                <input name="OUTRO.TIPO" id="opcoes" class="btn btn-primary" type="radio" value="3">
+             </div>
+           </td>
+       </tr>
+       <tr>
+           <td>
+              <label>CPF:<input type="text" name="cpf" \
+                pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \
+                title="Digite um CPF no formato: xxx.xxx.xxx-xx"></label> 
+              <label>RG:<input type="text" name="cpf" \
+                pattern="\d{3}\.\d{3}\.\d{3}" \
+                title="Digite um RG no formato: xxx.xxx.xxx-xx"></label>
+              <label>DIG:<input type="text" size="1" maxlength="1"></label>
+           </td>
+           <td>
+            <label> DATA DE EMISSÃO: <input type="date" size="2" maxlength="8"></label> 
+           </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>
+                <label>ENDEREÇO:<input type="text" size="50" maxlength="50" placeholder="Digite aqui..."></label>
+                <label>Nº:<input type="number" size="5" maxlength="5"></label>
+                <label>BAIRRO:<input type="text" size="45" maxlength="45" placeholder="Digite aqui..."></label>
+                <label>CEP:<input type="text" name="cep" \
+                    pattern="\d{5}-\d{3}" \
+                    title="Digite um CEP no formato: xxxxx-xxx"></label>
+            </td>        
+        </tr>
+        <tr>
+            <td>
+                <label>CIDADE:<input type="text" size="45" maxlength="45" placeholder="Digite aqui..."></label>
+                <label>ESTADO:<input type="text" size="45" maxlength="45" placeholder="Digite aqui..."></label>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>
+                <label>E-MAIL<input type="mailto" size="45" maxlength="45" placeholder="seu@e-mail.com.br"></label>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
